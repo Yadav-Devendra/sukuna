@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered Text</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
@@ -11,11 +12,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0; /* Light gray background for contrast */
         }
         .container {
             text-align: center;
-            font-size: 24px;
+            font-size: 5vw; /* Responsive font size */
+            color: #333; /* Dark gray color for better readability */
+            padding: 20px; /* Padding around the text */
+            border: 2px solid #333; /* Border for additional styling */
+            border-radius: 10px; /* Rounded corners */
+            background-color: #fff; /* White background for the text block */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
     </style>
 </head>
