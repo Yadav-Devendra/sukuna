@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Text</title>
+    <title>Image and Text Layout</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <style>
         html, body {
@@ -16,20 +16,41 @@
             background-color: #f0f0f0; /* Light gray background for contrast */
         }
         .container {
-            text-align: center;
-            font-size: 5vw; /* Responsive font size */
-            color: #333; /* Dark gray color for better readability */
-            padding: 20px; /* Padding around the text */
+            display: flex;
+            align-items: center;
+            width: 80vw; /* Adjust container width as needed */
+            height: 50vh; /* Adjust container height as needed */
             border: 2px solid #333; /* Border for additional styling */
             border-radius: 10px; /* Rounded corners */
-            background-color: #fff; /* White background for the text block */
+            background-color: #fff; /* White background for the container */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .container img {
+            width: 30%; /* Image occupies 30% of the container width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .text {
+            flex: 1; /* Takes up remaining space */
+            text-align: center;
+            font-size: 3vw; /* Responsive font size */
+            color: #333; /* Dark gray color for better readability */
+            padding: 20px; /* Padding around the text */
+        }
+        .left-image {
+            border-top-left-radius: 10px; /* Rounded corners for image */
+            border-bottom-left-radius: 10px; /* Rounded corners for image */
+        }
+        .right-image {
+            border-top-right-radius: 10px; /* Rounded corners for image */
+            border-bottom-right-radius: 10px; /* Rounded corners for image */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        Valeria is Sukuna
+        <img class="left-image" src="photo_2024-09-10_10-34-27 (2).jpg" alt="Left Image">
+        <div class="text">Valeria is Sukuna</div>
+        <img class="right-image" src="photo_2023-12-09_10-30-41.jpg" alt="Right Image">
     </div>
 </body>
 </html>
